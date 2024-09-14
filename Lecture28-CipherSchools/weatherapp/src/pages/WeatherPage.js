@@ -41,7 +41,7 @@ const WeatherPage = () => {
 
             let currentWeather=tempWeekWeather.current_weather;
             currentWeather.time=new Date(currentWeather.time);
-            currentWeather.isDay=currentWeather.is_day==1?true:false;
+            currentWeather.isDay=currentWeather.is_day===1?true:false;
             delete currentWeather.is_day;
             currentWeather.weatherCode=currentWeather.weathercode;
             delete currentWeather.weathercode;
